@@ -66,7 +66,6 @@ void QCPlotic::build_line(vector<QCPGraph *> &graph, QString &expression,
   }
   ui_->GraphWidget->replot(QCustomPlot::rpQueuedRefresh);
   legend->setText(expression);
-  qDebug() << graph.size();
 }
 
 void QCPlotic::show_calculator() { emit open_calculator_signal(); }

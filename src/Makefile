@@ -68,11 +68,11 @@ endif
 all: clean uninstall install tests
 
 install:
-	$(MAKEDIR) $(BUILD_DIR)
-	qmake6 -o $(BUILD_DIR)$(SEP)Makefile $(MAIN_PROJ_NAME)$(SEP)$(MAIN_PROJ_NAME).pro && \
-	cd $(BUILD_DIR) && \
-	make && \
-	$(OPEN) $(APP_NAME)
+	# $(MAKEDIR) $(BUILD_DIR)
+	# qmake6 -o $(BUILD_DIR)$(SEP)Makefile $(MAIN_PROJ_NAME)$(SEP)$(MAIN_PROJ_NAME).pro && \
+	# cd $(BUILD_DIR) && \
+	# make && \
+	$(OPEN) $(BUILD_DIR)$(SEP)$(APP_NAME)
 
 uninstall:
 	$(DELETE_FOLDER) $(BUILD_DIR)

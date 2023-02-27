@@ -2,6 +2,8 @@ QT += core gui printsupport
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
+QMAKE_CXXFLAGS=-finline-functions
+
 MODEL_DIR = ../Calculator_v2/Model_module
 VIEW_DIR = ../Calculator_v2/View_module
 CONTROLLER_DIR = ../Calculator_v2/Controller_module
